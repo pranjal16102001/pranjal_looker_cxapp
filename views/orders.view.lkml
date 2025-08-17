@@ -7,6 +7,7 @@ view: orders {
 
 
 #CHECKING_AUTOMATIC_WEBHOOK_DEPLOY
+#go to git and click pull request then click on compare & pull request to see the changes
 
 
   # This primary key is the unique key for this table in the underlying database.
