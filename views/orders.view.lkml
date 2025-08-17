@@ -9,6 +9,7 @@ view: orders {
   #WEBHOOK_TEST - SAFE CHANGE
   #WEBHOOK_TEST - SAFE CHANGE
   #WEBHOOK_TEST - be safe
+  #mention_thechanges
 
 
   # This primary key is the unique key for this table in the underlying database.
