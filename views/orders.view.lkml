@@ -6,7 +6,6 @@ view: orders {
   drill_fields: [order_id]
 
 
-
   #CHECKING_AUTOMATIC_WEBHOOK_DEPLOY
 
 
