@@ -6,14 +6,12 @@ view: orders {
   drill_fields: [order_id]
 
 
-  #WEBHOOK_TEST - SAFE CHANGE
-  #WEBHOOK_TEST - SAFE CHANGE
-  #WEBHOOK_TEST - be safe
-  #mention_thechanges
+
+  #CHECKING_AUTOMATIC_WEBHOOK_DEPLOY
 
 
   # This primary key is the unique key for this table in the underlying database.
-  # You need to define a primary key in a view in order to join to other views.
+  # You need to define a  key in a view in order to join to other views.
 
   dimension: order_id {
     primary_key: yes
