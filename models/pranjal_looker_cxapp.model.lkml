@@ -1,8 +1,9 @@
 # Define the database connection to be used for this model.
 connection: "pranjal_looker_cxapp"
-#LOOKER_EDITING
 # include all the views
 include: "/views/**/*.view.lkml"
+
+#checking_the_changes
 
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
