@@ -6,7 +6,7 @@ view: orders {
   drill_fields: [order_id]
 
 
-#CHECKING_AUTOMATIC_WEBHOOK_DEPLOY
+#CHECKING_AUTOMATIC_WEBHOOK_DEPLOYy
 #go to git and click pull request then click on compare & pull request to see the changes
 #go check the update
 
