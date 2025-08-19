@@ -1,6 +1,6 @@
 # Define the database connection to be used for this model.
 connection: "pranjal_looker_cxapp"
-
+#LOOKER_EDITING
 # include all the views
 include: "/views/**/*.view.lkml"
 
