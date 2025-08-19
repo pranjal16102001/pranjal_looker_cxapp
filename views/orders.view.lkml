@@ -8,7 +8,7 @@ view: orders {
 
 #CHECKING_AUTOMATIC_WEBHOOK_DEPLOYy
 #go to git and click pull request then click on compare & pull request to see the changes
-#go check the update
+#is there any updates
 
   # This primary key is the unique key for this table in the underlying database.
   # You need to define a  key in a view in order to join to other views.
