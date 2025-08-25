@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - main
-
+#commit
 # Define the jobs to run
 jobs:
   deploy-to-production:
@@ -22,7 +22,7 @@ jobs:
             "${{ secrets.LOOKER_BASE_URL }}/api/4.0/login" \
             -d "client_id=${{ secrets.LOOKER_CLIENT_ID }}" \
             -d "client_secret=${{ secrets.LOOKER_CLIENT_SECRET }}")
-          
+
           # Extract the access_token from the JSON response and set it as an output variable
           ACCESS_TOKEN=$(echo $ACCESS_TOKEN_RESPONSE | jq -r .access_token)
           echo "access_token=$ACCESS_TOKEN" >> $GITHUB_OUTPUT
