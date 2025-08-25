@@ -5,7 +5,7 @@ name: Deploy Looker to Production
 on:
   push:
     branches:
-      - master
+      - main
 
 # Define the jobs to run
 jobs:
