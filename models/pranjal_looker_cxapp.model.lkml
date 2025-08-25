@@ -3,7 +3,7 @@ connection: "pranjal_looker_cxapp"
 # include all the views
 include: "/views/**/*.view.lkml"
 
-#edithe the change 
+#edithe the change
 # Datagroups define a caching policy for an Explore. To learn more,
 # use the Quick Help panel on the right to see documentation.
 
@@ -11,7 +11,7 @@ datagroup: pranjal_looker_cxapp_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
-
+#commit
 persist_with: pranjal_looker_cxapp_default_datagroup
 
 # Explores allow you to join together different views (database tables) based on the
@@ -26,4 +26,3 @@ persist_with: pranjal_looker_cxapp_default_datagroup
 # Each joined view also needs to define a primary key.
 
 explore: orders {}
-
