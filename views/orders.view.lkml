@@ -12,7 +12,7 @@ view: orders {
 
   # This primary key is the unique key for this table in the underlying database.
   # You need to define a  key in a view in order to join to other views.
-
+#hi_i_am_pranjal
   dimension: order_id {
     primary_key: yes
     type: number

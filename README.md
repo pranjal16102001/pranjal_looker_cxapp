@@ -1,7 +1,12 @@
+<<<<<<< HEAD
+# pranjal_looke_cxapp
+#test the file
+=======
 <h1><span style="color:#2d7eea">README - Your LookML Project</span></h1>
 
 <h2><span style="color:#2d7eea">LookML Overview</span></h2>
 
+#cxapp -
 LookML is a data modeling language for describing dimensions, fields, aggregates and relationships based on SQL.
 
 LookML is powerful because it:
@@ -49,3 +54,4 @@ To learn more about LookML and how to develop visit:
 - [Looker User Guide](https://looker.com/guide)
 - [Looker Help Center](https://help.looker.com)
 - [Looker University](https://training.looker.com/)
+>>>>>>> branch 'main' of https://github.com/pranjal16102001/pranjal_looke_cxapp
