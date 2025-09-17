@@ -16,24 +16,17 @@ jobs:
       - name: Get Looker Token
         id: looker_auth
         run: |
-          # Use curl to make a POST request to the Looker API /login endpoint
-          # It uses the secrets you created in the previous step
-          # It then uses jq (a JSON processor) to parse the response and grab the access_token
           ACCESS_TOKEN=$(curl -s -X POST "${{ secrets.LOOKER_BASE_URL }}:19999/api/4.0/login" \
             -d "client_id=${{ secrets.LOOKER_CLIENT_ID }}" \
             -d "client_secret=${{ secrets.LOOKER_CLIENT_SECRET }}" | jq -r .access_token)
-
-          # This line makes the token available to other steps in the job
           echo "token=$ACCESS_TOKEN" >> $GITHUB_OUTPUT
 
       # Step 2: Deploy the project to production using the token
       - name: Deploy to Production
         run: |
-          # IMPORTANT: This script assumes your GitHub repository name is the
-          # same as your Looker project_id. If not, replace the line below with:
-          # PROJECT_ID="your_actual_looker_project_name"
+          # This assumes your repo name matches your Looker project_id.
+          # If not, change the line below to: PROJECT_ID="your_looker_project_name"
           PROJECT_ID="${{ github.event.repository.name }}"
-
-          # Use curl again to make an authenticated POST request to the deploy endpoint
-          curl -s -X POST "${{ secrets.LOOKER_BASE_URL }}:19999/api/4.0/projects/$PROJECT_ID/deploy_to_production" \
+          
+          curl -s -X POST "${{ secrets.LOOK-ER_BASE_URL }}:19999/api/4.0/projects/$PROJECT_ID/deploy_to_production" \
             -H "Authorization: token ${{ steps.looker_auth.outputs.token }}"
