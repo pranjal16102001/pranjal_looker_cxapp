@@ -6,7 +6,7 @@ on:
   push:
     branches:
       - master
-#
+#_
 jobs:
   deploy:
     # Use the latest available Ubuntu runner
