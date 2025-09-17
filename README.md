@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# pranjal_looke_cxapp
+# pranjal_looker_cxapp
 #test the file
 =======
 <h1><span style="color:#2d7eea">README - Your LookML Project</span></h1>
