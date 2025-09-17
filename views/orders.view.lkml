@@ -65,7 +65,7 @@ view: orders {
     datatype: date
     sql: ${TABLE}.order_date ;;
   }
-  dimension: statemnet {
+  dimension: statement {
     type: string
     sql: ${TABLE}.status ;;
     description: "Testing Git push at 6:22 PM."
