@@ -1,0 +1,32 @@
+# A descriptive name for your workflow
+name: Deploy Looker to Production
+
+# This action triggers on every push to the 'master' branch
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    # Use the latest available Ubuntu runner
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Get an access token from the Looker API
+      - name: Get Looker Token
+        id: looker_auth
+        run: |
+          ACCESS_TOKEN=$(curl -s -X POST "${{ secrets.LOOKER_BASE_URL }}:19999/api/4.0/login" \
+            -d "client_id=${{ secrets.LOOKER_CLIENT_ID }}" \
+            -d "client_secret=${{ secrets.LOOKER_CLIENT_SECRET }}" | jq -r .access_token)
+          echo "token=$ACCESS_TOKEN" >> $GITHUB_OUTPUT
+
+      # Step 2: Deploy the project to production using the token
+      - name: Deploy to Production
+        run: |
+          # This assumes your repo name matches your Looker project_id.
+          # If not, change the line below to: PROJECT_ID="your_looker_project_name"
+          PROJECT_ID="${{ github.event.repository.name }}"
+          
+          curl -s -X POST "${{ secrets.LOOKER_BASE_URL }}:19999/api/4.0/projects/$PROJECT_ID/deploy_to_production" \
+            -H "Authorization: token ${{ steps.looker_auth.outputs.token }}"
