@@ -75,7 +75,7 @@ view: orders {
     type: string
     sql: ${TABLE}.payment_method ;;
   }
-  dimension: payment_was_done{
+  dimension: payment_was_made{
     type: string
     sql: ${TABLE}.status ;;
     description: "Testing automated deployment at 6:30 PM." # <-- Add a line like this
