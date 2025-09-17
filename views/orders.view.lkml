@@ -43,6 +43,7 @@ view: orders {
     map_layer_name: countries
     sql: ${TABLE}.country ;;
   }
+
   # Dates and timestamps can be represented in Looker using a dimension group of type: time.
   # Looker converts dates and timestamps to the specified timeframes within the dimension group.
 
@@ -63,6 +64,11 @@ view: orders {
     convert_tz: no
     datatype: date
     sql: ${TABLE}.order_date ;;
+  }
+  dimension: statemnet {
+    type: string
+    sql: ${TABLE}.status ;;
+    description: "Testing Git push at 6:22 PM."
   }
 
   dimension: payment_method {
