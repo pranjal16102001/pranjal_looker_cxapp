@@ -80,7 +80,7 @@ view: orders {
     type: string
     sql: ${TABLE}.payment_method ;;
   }
-  dimension: payment_ways{
+  dimension: payment_way{
     type: string
     sql: ${TABLE}.status ;;
     description: "Testing automated deployment at 6:30 PM." # <-- Add a line like this
