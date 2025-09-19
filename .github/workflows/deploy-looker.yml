@@ -26,7 +26,7 @@ jobs:
         run: |
           # This assumes your repo name matches your Looker project_id.
           # If not, change the line below to: PROJECT_ID="your_looker_project_name"
-          PROJECT_ID="${{ github.event.repository.name }}"
+          PROJECT_ID="pranjal_looker_cxapp"
 
           curl -s -X POST "${{ secrets.LOOKER_BASE_URL }}:19999/api/4.0/projects/$PROJECT_ID/deploy_to_production" \
             -H "Authorization: token ${{ steps.looker_auth.outputs.token }}"
