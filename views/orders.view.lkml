@@ -32,6 +32,11 @@ view: orders {
     value_format_name: usd
   }
 
+  dimension: total_counts {
+    type: number
+    sql: ${TABLE}.id ;;
+    description: "This is the unique ID for each order." # Add this line
+  }
 
   dimension: channel {
     type: string
