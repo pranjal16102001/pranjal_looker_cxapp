@@ -21,7 +21,7 @@ jobs:
             -d "client_secret=${{ secrets.LOOKER_CLIENT_SECRET }}" | jq -r .access_token)
           echo "token=$ACCESS_TOKEN" >> $GITHUB_OUTPUT
 
-      # Step 2: Deploy the project to production using the token
+      # Step 2: Deploy the project to production using the token done
       - name: Deploy to Production
         run: |
           # This assumes your repo name matches your Looker project_id.
