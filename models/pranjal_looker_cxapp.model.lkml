@@ -7,7 +7,7 @@ include: "/views/**/*.view.lkml"
 #HELLO_TESTING_124
 #edithe the change
 # Datagroups define a caching policy for an Explore. To learn more,
-# use the Quick Help panel on the right to see documentation.
+# use the Quick Help panel on the right to see documentationn
 
 datagroup: pranjal_looker_cxapp_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
