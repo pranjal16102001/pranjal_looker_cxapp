@@ -6,8 +6,8 @@
   description: ''
   preferred_slug: 0U70wRWjjT0wWw7ihUGzKe
   elements:
-  - title: cxapp v1 title
-    name: cxapp v1 title
+  - title: cxapp v2 title
+    name: cxapp v2 title
     model: pranjal_looker_cxapp
     explore: orders
     type: looker_google_map
