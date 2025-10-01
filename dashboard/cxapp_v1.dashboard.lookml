@@ -1,6 +1,6 @@
 ---
-- dashboard: cxapp_v1
-  title: cxapp v1
+- dashboard: cxapp_v2
+  title: cxapp v2
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
